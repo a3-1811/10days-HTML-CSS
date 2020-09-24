@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Common */
+h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+p {
+    margin-top: 1rem;
+    line-height: 1.3rem;
+}
+
+span {
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+.btn {
+    margin-top: 1rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #fff;
+    color: #000;
+    outline: none;
+    border: none;
+}
+
+section {
+    background: #0060A3;
+    padding: 1rem 4rem;
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* Started build */
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul li {
+    margin-right: 2rem;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+}
+
+header .logo {
+    max-width: 80px;
+    cursor: pointer;
+}
+
+
+/* Contentt */
+.content {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.content .content__left {
+    max-width: 550px;
+    padding-top: 5rem;
+}
+
+.content .content__right {
+    max-width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.content__right img {
+    margin: 2rem 6rem 0 0;
+}
+
+/* Thumb */
+.thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumb img {
+    max-width: 60px;
+    padding: 1rem 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.thumb img:hover {
+    transform: translateY(-0.5rem);
+}
+
+/* Social */
+.social {
+    position: absolute;
+    top: 35%;
+    right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social li img {
+    filter: invert(1);
+    margin-top: 0.5rem;
+    transform: scale(0.6);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.social li img:hover {
+    transform: scale(0.8);
+}

@@ -9,7 +9,52 @@
 </head>
 
 <body>
-    <h1>Day 3 Repair</h1>
+    <section id="sec1">
+        <header>
+            <img src="./img/logo.png" alt="" class="logo">
+            <ul class="nav">
+                <li>Home</li>
+                <li>Products</li>
+                <li>What's New</li>
+                <li>Newsletter</li>
+                <li>Contact</li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="content__left">
+                <h1>that's what <br><span>i like</span>
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptatibus quos quasi aperiam
+                    recusandae quidem iusto praesentium molestias neque natus, soluta placeat aliquam sint illum dolores
+                    necessitatibus error vero voluptatem, nesciunt laboriosam omnis corrupti nobis!</p>
+                <a class="btn" href="">view all products</a>
+            </div>
+            <div class="content__right">
+                <img src="./img/pepsi001.png" alt="" class="content__right" id="pepsi">
+            </div>
+        </div>
+        <div class="thumb">
+            <img src="./img/pepsi001.png" alt="" onclick="setSrcBG('./img/pepsi001.png','#0060A3');">
+            <img src="./img/pepsi002.png" alt="" onclick="setSrcBG('./img/pepsi002.png','#A7A6AB');">
+            <img src="./img/pepsi003.png" alt="" onclick="setSrcBG('./img/pepsi003.png','#0C0E0F');">
+        </div>
+        <ul class="social">
+            <li><img src="./img/facebook.png" alt=""></li>
+            <li><img src="./img/instagram.png" alt=""></li>
+            <li><img src="./img/twitter.png" alt=""></li>
+        </ul>
+    </section>
+
+    <script>
+        const setSrcBG = (path, color) => {
+            console.log(path, color)
+            document.getElementById("pepsi").src = path;
+            changeBG(color);
+        }
+        const changeBG = (color) => {
+            document.getElementById("sec1").style.backgroundColor = color;
+        }
+    </script>
 </body>
 
 </html>
